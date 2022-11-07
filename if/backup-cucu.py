@@ -1,3 +1,6 @@
+from tkinter import E
+
+
 pewaris = input("Pewaris : ")
 harta = 0
 suami = "0"
@@ -159,49 +162,69 @@ if (bagianayah == 0):
             bagiankakek = "sisa"
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk == 0 and cucu_pr > 0 and cucu_lk > 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk > 0 and cucu_pr > 0 and cucu_lk == 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk > 0 and cucu_pr == 0 and cucu_lk > 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk > 0 and cucu_pr == 0 and cucu_lk == 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk == 0 and cucu_pr == 0 and cucu_lk > 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk > 0 and cucu_pr > 0 and cucu_lk > 0):
+            bagiankakek = 0.16
+            bagiansisakakek = ""
+            print(f"Bagian kakek {bagiankakek}")
+        elif (anak_pr == 0 and anak_lk == 0 and cucu_pr > 0 and cucu_lk == 0):
+            bagiankakek = 0.16
+            bagiansisakakek = "+sisa"
+            print(f"Bagian kakek {bagiankakek} {bagiansisakakek}")
         elif (anak_pr > 0 and anak_lk == 0 and cucu_pr > 0 and cucu_lk == 0):
             bagiankakek = 0.16
             bagiansisakakek = "+sisa"
             print(f"Bagian kakek {bagiankakek} {bagiansisakakek}")
-        elif (anak_pr > 0 and cucu_pr == 0 and anak_lk == 0 and cucu_lk == 0):
+        elif (anak_pr > 0 and anak_lk == 0 and cucu_pr == 0 and cucu_lk == 0):
             bagiankakek = 0.16
             bagiansisakakek = "+sisa"
             print(f"Bagian kakek {bagiankakek} {bagiansisakakek}")
-        elif (anak_pr == 0 and cucu_pr > 0 and anak_lk == 0 and cucu_lk == 0):
-            bagiankakek = 0.16
-            bagiansisakakek = "+sisa"
-            print(f"Bagian kakek {bagiankakek} {bagiansisakakek}")
-        elif (anak_pr > 0 and cucu_pr > 0 and anak_lk > 0 and cucu_lk > 0):
+        elif (anak_pr > 0 and anak_lk > 0 and cucu_pr > 0 and cucu_lk > 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr > 0 and cucu_pr == 0 and anak_lk > 0 and cucu_lk == 0):
+        elif (anak_pr > 0 and anak_lk > 0 and cucu_pr == 0 and cucu_lk == 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr > 0 and cucu_pr == 0 and anak_lk == 0 and cucu_lk > 0):
+        elif (anak_pr > 0 and anak_lk == 0 and cucu_pr == 0 and cucu_lk > 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr == 0 and cucu_pr > 0 and anak_lk == 0 and cucu_lk > 0):
+        elif (anak_pr > 0 and anak_lk > 0 and cucu_pr > 0 and cucu_lk == 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr == 0 and cucu_pr > 0 and anak_lk > 0 and cucu_lk == 0):
+        elif (anak_pr > 0 and anak_lk == 0 and cucu_pr > 0 and cucu_lk > 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr == 0 and cucu_pr == 0 and anak_lk > 0 and cucu_lk > 0):
+        elif (anak_pr == 0 and anak_lk > 0 and cucu_pr > 0 and cucu_lk > 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
             print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr == 0 and cucu_pr == 0 and anak_lk > 0 and cucu_lk == 0):
+        elif (anak_pr > 0 and anak_lk > 0 and cucu_pr == 0 and cucu_lk > 0):
             bagiankakek = 0.16
             bagiansisakakek = ""
-            print(f"Bagian kakek {bagiankakek}")
-        elif (anak_pr == 0 and cucu_pr == 0 and anak_lk == 0 and cucu_lk > 0):
-            bagiankakek = 0.16
-            bagiansisa = "kakek"
             print(f"Bagian kakek {bagiankakek}")
     else:
         bagiankakek = 0
@@ -242,6 +265,11 @@ if (cucu_pr >= 1 and cucu_lk >= 1):
         bagiancuculk = "sisa"
         print(f"bagian cucu laki-laki {bagiancuculk}")
     elif (anak_pr == 0 and anak_lk == 0):
+        bagiancucupr = "sisa"
+        bagiancuculk = "sisa"
+        print(f"bagian cucu perempuan {bagiancucupr}")
+        print(f"bagian cucu laki-laki {bagiancuculk}")
+    elif (anak_pr == 1 and anak_lk == 0):
         bagiancucupr = "sisa"
         bagiancuculk = "sisa"
         print(f"bagian cucu perempuan {bagiancucupr}")
@@ -585,11 +613,14 @@ asalmasalah = 0
 # pembagian asal masalah
 if (pewaris == "suami" or pewaris == "Suami" or pewaris == "1" or pewaris == "SUAMI"):
     if (bagianIstri == 0.125):
-        if (ayah == "0" and kakek == "0" and anak_lk == 0):
-            asalmasalah = 8
+        if (ayah == "0" and kakek == "0" and anak_lk == 0 and cucu_lk == 0):
+                asalmasalah = 8
         else:
             if(ayah == "0" and ibu == "0" and kakek == "0" and nenek == 0):
-                asalmasalah = 8
+                if(cucu_lk > 0 and anak_pr > 1):
+                    asalmasalah = 24
+                else:
+                    asalmasalah = 8
             else:
                 asalmasalah = 24
     elif (bagianIstri == 0.25):
@@ -606,14 +637,32 @@ if (pewaris == "suami" or pewaris == "Suami" or pewaris == "1" or pewaris == "SU
     elif (istri == 0 and bagianIstri == 0):
         if(kakek == "0" and nenek == 0 and ayah == "y" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 3
+        # ayah
         elif(kakek == "0" and nenek == 0 and ayah == "y" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # ibu
         elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # kakek
         elif(kakek == "y" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # nenek
         elif(kakek == "0" and nenek > 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # cucupr
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah = asalmasalah_cucupr
+        # cuculk
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cuculk = (1 * cucu_lk)
+            asalmasalah = asalmasalah_cuculk
+        # cuculk and cucu pr
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudara_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah_cuculk = (2 * cucu_lk)
+            asalmasalah = asalmasalah_cucupr + asalmasalah_cuculk
+        # batas
         elif(kakek == "y" and nenek > 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 6
         elif(kakek == "y" and nenek == 0 and ayah == "0" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
@@ -660,7 +709,18 @@ elif (pewaris == "istri" or pewaris == "Istri" or pewaris == "2" or pewaris == "
             elif(nenek > 0 and anak_pr > 1):
                 asalmasalah = 12
             else:
-                asalmasalah = 4
+                if(ibu == "y" and nenek == 0 and anak_pr == 1 and cucu_pr > 0 and cucu_lk == 0):
+                    asalmasalah = 12
+                elif(ibu == "0" and nenek > 0 and anak_pr == 1 and cucu_pr > 0 and cucu_lk == 0):
+                    asalmasalah = 12
+                else:
+                    if(anak_pr > 1):
+                        asalmasalah = 12
+                    else:
+                        if(cucu_lk > 0 or cucu_pr > 0):
+                            asalmasalah = 12
+                        else:
+                            asalmasalah = 4
         else:
             if(ayah == "0" and ibu == "0" and kakek == "0" and nenek == 0):
                 asalmasalah = 4
@@ -669,14 +729,32 @@ elif (pewaris == "istri" or pewaris == "Istri" or pewaris == "2" or pewaris == "
     elif (bagiansuami == 0):
         if(kakek == "0" and nenek == 0 and ayah == "y" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 3
+        # ayah
         elif(kakek == "0" and nenek == 0 and ayah == "y" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # ibu
         elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # kakek
         elif(kakek == "y" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # ibu
         elif(kakek == "0" and nenek > 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 1
+        # cucupr
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah = asalmasalah_cucupr
+        # cuculk
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cuculk = (1 * cucu_lk)
+            asalmasalah = asalmasalah_cuculk
+        # cuculk and cucu pr
+        elif(kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudara_sibu == 0 and saudara_sibu == 0):
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah_cuculk = (2 * cucu_lk)
+            asalmasalah = asalmasalah_cucupr + asalmasalah_cuculk
+        # batas
         elif(kakek == "y" and nenek > 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
             asalmasalah = 6
         elif(kakek == "y" and nenek == 0 and ayah == "0" and ibu == "y" and anak_pr == 0 and anak_lk == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudari_sibu == 0 and saudara_sibu == 0):
@@ -909,6 +987,8 @@ else:
 #################################### Hitung Asal Masalah ###################################
 # tanpa anak
 if (anak_lk == 0 and anak_pr == 0):
+    asalmasalah_anakpr = 0
+    asalmasalah_anaklk = 0   
     # mengambil nilai asal masalah suami/istri
     if (suami == "y"):
         ambil_asalmasalah = asalmasalah_suami
@@ -916,39 +996,271 @@ if (anak_lk == 0 and anak_pr == 0):
         ambil_asalmasalah = asalmasalah_istri
     # batas mendapatkan nilai
     # totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_kakek
-    if(cucu_lk == 0 and cucu_pr == 0):
-        if(pewaris == "suami" or pewaris == "Suami" or pewaris == "SUAMI" or pewaris == "1"):
-            if(istri == 0 and ibu == "y"):
-                totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu
-            elif(istri == 0 and nenek > 0):
-                totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
-            else:
-                if(istri == 0 and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek
-                elif(istri == 0 and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah
-                elif(istri > 0 and ayah == "0" and kakek == "0" and ibu == "0" and nenek > 0):
-                    totalasalmasalah = ambil_asalmasalah
+    asalmasalah_cucupr = 0
+    asalmasalah_cuculk = 0
+    if(suami == "0" and istri == 0 and ayah == "0" and ibu == "0" and kakek == "0" and nenek == 0 and anak_lk == 0 and anak_pr == 0 and cucu_lk == 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
+        asalmasalah_cucupr = 1
+    else:
+        if(cucu_pr > 0 and cucu_lk == 0):
+            if(pewaris == "suami" or pewaris == "Suami" or pewaris == "SUAMI" or pewaris == "1") : 
+                if(cucu_pr < 2 and cucu_pr > 0):
+                    if(kakek == "0" and ayah == "0"):
+                        hitungasalmasalah_cucupr = (6 / 2) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                    else:
+                        hitungasalmasalah_cucupr = (asalmasalah / 2) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")           
                 else:
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
+                    if(kakek == "0" and ayah == "0"):
+                        hitungasalmasalah_cucupr = (6 / 3) * 2
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                    else:
+                        hitungasalmasalah_cucupr = (asalmasalah / 3) * 2
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+            elif(pewaris == "istri" or pewaris == "Istri" or pewaris == "ISTRI" or pewaris == "2"):
+                if(suami == "y"):
+                    if(asalmasalah == 4):
+                        hitungasalmasalah_cucupr = (6 / 2) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                    else:
+                        if(cucu_pr < 2 and cucu_pr > 0):
+                            hitungasalmasalah_cucupr = (asalmasalah/ 2) * 1
+                            asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                            print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                        else:
+                            hitungasalmasalah_cucupr = (asalmasalah/ 3) * 2
+                            asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                            print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                else:
+                    if(cucu_pr < 2 and cucu_pr > 0):
+                        hitungasalmasalah_cucupr = (asalmasalah / 2) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                    else:
+                        hitungasalmasalah_cucupr = (asalmasalah/ 3) * 2
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+        elif(cucu_pr > 0 and cucu_lk > 0):
+            if(anak_pr > 0 and anak_pr < 2):
+                asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah_cuculk = (2 * cucu_lk)        
+    if(pewaris == "suami" or pewaris == "Suami" or pewaris == "SUAMI" or pewaris == "1"):
+        if(istri == 0 and ibu == "y"):
+            if(cucu_lk > 0):
+                totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_ayah + asalmasalah_kakek
+            else:
+                totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_ayah + asalmasalah_kakek + asalmasalah_cucupr
+        elif(istri == 0 and nenek > 0):
+            if(cucu_lk > 0):
+                totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek + asalmasalah_ayah + asalmasalah_kakek
+            else:
+                totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek + asalmasalah_cucupr + asalmasalah_ayah + asalmasalah_kakek
         else:
-            if(suami == "0" and ibu == "y"):
-                totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu
-            elif(suami == "0" and nenek > 0):
-                totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
-            else:
-                if(suami == "0" and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
+            # ibu
+            if(istri > 0 and ayah == "0" and kakek == "0" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            # kakek
+            elif(istri == 0 and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
                     totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek
-                elif(suami == "0" and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_cucupr
+            elif(istri > 0 and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_cucupr
+            # ayah
+            elif(istri == 0 and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
                     totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah
-                elif(suami == "y" and ayah == "0" and kakek == "0" and ibu == "0" and nenek > 0):
+                else :
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_cucupr
+            elif(istri > 0 and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah
+                else :
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_cucupr
+            # nenek
+            elif(istri > 0 and ayah == "0" and kakek == "0" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
                     totalasalmasalah = ambil_asalmasalah
                 else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(istri > 0 and ayah == "0" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            # ayah dan ibu
+            elif(istri > 0 and ayah == "y" and kakek == "0" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_cucupr
+            # ayah dan nenek
+            elif(istri > 0 and ayah == "y" and kakek == "0" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_nenek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_nenek + asalmasalah_cucupr
+             # kakek dan nenek
+            elif(istri > 0 and ayah == "0" and kakek == "y" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_nenek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_nenek + asalmasalah_cucupr
+            # kakek dan ibu
+            elif(istri > 0 and ayah == "0" and kakek == "y" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_ibu + asalmasalah_cucupr
+            else:
+                if(cucu_lk > 0):
+                    if(istri == 0 and ayah == "0" and ibu == "0" and kakek =="0" and nenek == 0 and anak_lk == 0 and anak_pr == 0 and cucu_pr == 0 and cucu_lk > 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
+                        asalmasalah_cuculk = (1 * cucu_lk)
+                        print(f"Tampil Siham Masalah Cucu Laki-Laki : 1")
+                        totalasalmasalah = asalmasalah_cuculk
+                    elif(istri == 0 and kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudara_sibu == 0 and saudara_sibu == 0):
+                        asalmasalah_cucupr = (1 * cucu_pr)
+                        asalmasalah_cuculk = (2 * cucu_lk)
+                        print(f"Tampil Siham Masalah Cucu Laki-Laki : 2")
+                        print(f"Tampil Siham Masalah Cucu Perempuan : 1")
+                        totalasalmasalah = asalmasalah_cucupr + asalmasalah_cuculk
+                    else:
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
+                else:
+                    if(istri == 0 and ayah == "0" and ibu == "0" and kakek =="0" and nenek == 0 and anak_lk == 0 and anak_pr == 0 and cucu_pr > 0 and cucu_lk == 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
+                        asalmasalah_cucupr = (1 * cucu_pr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : 1")
+                        totalasalmasalah = asalmasalah_cucupr
+                    else:
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek + asalmasalah_cucupr
+    else:
+        if(suami == "0" and ibu == "y"):
+            if(cucu_lk > 0):
+                totalasalmasalah = asalmasalah_ibu + asalmasalah_ayah + asalmasalah_kakek
+            else:
+                totalasalmasalah = asalmasalah_ibu + asalmasalah_ayah + asalmasalah_kakek + asalmasalah_cucupr
+        elif(suami == "0" and nenek > 0):
+            if(cucu_lk > 0):
+                totalasalmasalah = asalmasalah_nenek + asalmasalah_ayah + asalmasalah_kakek
+            else:
+                totalasalmasalah = asalmasalah_nenek + asalmasalah_ayah + asalmasalah_kakek + asalmasalah_cucupr
+        else:
+            if(suami == "0" and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = asalmasalah_kakek
+                else:
+                    totalasalmasalah = asalmasalah_kakek + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "0" and kakek == "y" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "0" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(suami == "y" and ayah == "0" and kakek == "0" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_cucupr
+            elif(suami == "0" and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = asalmasalah_ayah
+                else:
+                    totalasalmasalah = asalmasalah_ayah + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "y" and kakek == "0" and ibu == "0" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "0" and kakek == "0" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
                     totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
-    else : 
-        totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_kakek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "y" and kakek == "0" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_cucupr
+            elif(suami == "y" and ayah == "0" and kakek == "y" and ibu == "y" and nenek == 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_ibu
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_ibu + asalmasalah_cucupr
+            # ayah dan nenek
+            elif(suami == "y" and ayah == "y" and kakek == "0" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_nenek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_nenek + asalmasalah_cucupr
+             # kakek dan nenek
+            elif(suami == "y" and ayah == "0" and kakek == "y" and ibu == "0" and nenek > 0):
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_nenek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_kakek + asalmasalah_nenek + asalmasalah_cucupr
+            else:
+                if(cucu_lk > 0):
+                    if(istri == 0 and ayah == "0" and ibu == "0" and kakek =="0" and nenek == 0 and anak_lk == 0 and anak_pr == 0 and cucu_pr == 0 and cucu_lk > 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
+                        asalmasalah_cuculk = (1 * cucu_lk)
+                        print(f"Tampil Siham Masalah Cucu Laki-Laki : 1")
+                        totalasalmasalah = asalmasalah_cuculk
+                    elif(istri == 0 and kakek == "0" and nenek == 0 and ayah == "0" and ibu == "0" and anak_pr == 0 and anak_lk == 0 and cucu_lk > 0 and cucu_pr > 0 and saudara_knd == 0 and saudari_knd == 0 and saudari_sayah == 0 and saudara_sayah == 0 and saudara_sibu == 0 and saudara_sibu == 0):
+                        asalmasalah_cucupr = (1 * cucu_pr)
+                        asalmasalah_cuculk = (2 * cucu_lk)
+                        print(f"Tampil Siham Masalah Cucu Laki-Laki : 2")
+                        print(f"Tampil Siham Masalah Cucu Perempuan : 1")
+                        totalasalmasalah = asalmasalah_cucupr + asalmasalah_cuculk
+                    else:
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek
+                else:
+                    if(istri == 0 and ayah == "0" and ibu == "0" and kakek =="0" and nenek == 0 and anak_lk == 0 and anak_pr == 0 and cucu_pr > 0 and cucu_lk == 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
+                        asalmasalah_cucupr = (1 * cucu_pr)
+                        print(f"Tampil Siham Masalah Perempuan : 1")
+                        totalasalmasalah = asalmasalah_cucupr
+                    else:
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_nenek + asalmasalah_cucupr
     sisa = asalmasalah - totalasalmasalah
-    jumlahasalmasalah = asalmasalah
+    if(pewaris == "Suami" or pewaris == "SUAMI" or pewaris == "suami" or pewaris == "1"):
+        if(asalmasalah_cucupr == 16):
+            jumlahasalmasalah = totalasalmasalah
+        else:
+            if(ayah == "0" and kakek == "0"):
+                if(cucu_pr > 0 and cucu_lk == 0):
+                    jumlahasalmasalah = totalasalmasalah
+                else:
+                    jumlahasalmasalah = asalmasalah
+            else:
+                jumlahasalmasalah = asalmasalah
+    else:
+        if(asalmasalah_cucupr == 16):
+            jumlahasalmasalah = totalasalmasalah
+        else:
+            if(ayah == "0" and kakek == "0"):
+                if(cucu_pr > 0 and cucu_lk == 0):
+                    jumlahasalmasalah = totalasalmasalah
+                else:
+                    jumlahasalmasalah = asalmasalah
+            else:
+                if(cucu_pr > 0 and cucu_lk == 0):
+                    jumlahasalmasalah = totalasalmasalah
+                else:
+                    jumlahasalmasalah = asalmasalah
 elif (anak_pr > 0 and anak_lk == 0):
     # asal masalah anak perempuan lebih dari 1 dan tanpa anak laki-laki
     if (anak_pr > 1 and anak_lk == 0):
@@ -1001,6 +1313,16 @@ elif (anak_pr > 0 and anak_lk == 0):
                 else:
                     hitungasalmasalah_anakpr = (2/ 2) * 1
                     asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+            elif(ibu == "0" and ayah == "0" and kakek == "0" and cucu_pr > 0 and cucu_lk == 0):
+                if(nenek > 0):
+                    hitungasalmasalah_anakpr = (6/ 2) * 1
+                    asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+                else:
+                    hitungasalmasalah_anakpr = (6 / 2) * 1
+                    asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+            elif(ibu == "y" and ayah == "0" and kakek == "0" and cucu_pr > 0 and cucu_lk == 0):
+                hitungasalmasalah_anakpr = (6 / 2) * 1
+                asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
             else:
                 hitungasalmasalah_anakpr = (asalmasalah / 2) * 1
                 asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
@@ -1017,6 +1339,24 @@ elif (anak_pr > 0 and anak_lk == 0):
                 else:
                     hitungasalmasalah_anakpr = (2/ 2) * 1
                     asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+            elif(ibu == "0" and ayah == "0" and kakek == "0" and cucu_pr > 0 and cucu_lk == 0):
+                if(nenek > 0):
+                    if(suami == "y"):
+                        hitungasalmasalah_anakpr = (asalmasalah / 2) * 1
+                        asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+                    else:
+                        hitungasalmasalah_anakpr = (6/ 2) * 1
+                        asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+                else:
+                    hitungasalmasalah_anakpr = (6 / 2) * 1
+                    asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+            elif(ibu == "y" and ayah == "0" and kakek == "0" and cucu_pr > 0 and cucu_lk == 0):
+                if(suami == "y"):
+                    hitungasalmasalah_anakpr = (asalmasalah / 2) * 1
+                    asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
+                else:
+                    hitungasalmasalah_anakpr = (6 / 2) * 1
+                    asalmasalah_anakpr = int(hitungasalmasalah_anakpr)                 
             else:
                 hitungasalmasalah_anakpr = (asalmasalah / 2) * 1
                 asalmasalah_anakpr = int(hitungasalmasalah_anakpr)
@@ -1024,6 +1364,35 @@ elif (anak_pr > 0 and anak_lk == 0):
                 f"Tampil Siham Masalah Anak Perempuan : {asalmasalah_anakpr}")
     elif (anak_pr == 0):
         asalmasalah_anakpr = 0
+    # pemabagian siham cucu lk and cucu perempuan
+    asalmasalah_cucupr = 0
+    asalmasalah_cuculk = 0
+    if(cucu_pr > 0 and cucu_lk == 0):
+        if(anak_pr > 0 and anak_pr < 2):
+            if(pewaris == "suami" or pewaris == "Suami" or pewaris == "SUAMI" or pewaris == "1") :            
+                hitungasalmasalah_cucupr = (asalmasalah / 6) * 1
+                asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+            elif(pewaris == "istri" or pewaris == "Istri" or pewaris == "ISTRI" or pewaris == "2"):
+                if(suami == "y"):
+                    if(asalmasalah == 4):
+                        hitungasalmasalah_cucupr = (6/ 6) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                    else:
+                        hitungasalmasalah_cucupr = (asalmasalah/ 6) * 1
+                        asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                        print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+                else:
+                    hitungasalmasalah_cucupr = (asalmasalah / 6) * 1
+                    asalmasalah_cucupr = int(hitungasalmasalah_cucupr)
+                    print(f"Tampil Siham Masalah Cucu Perempuan : {asalmasalah_cucupr}")
+    elif(cucu_pr > 0 and cucu_lk > 0):
+        if(anak_pr > 0 and anak_pr < 2):
+            asalmasalah_cucupr = (1 * cucu_pr)
+        else:
+            asalmasalah_cucupr = 0
+        asalmasalah_cuculk = (2 * cucu_lk)
     # totalasalmasalah dengan anak perempuan tanpa anak lk
     # mengambil nilai asal masalah suami/istri
     if (suami == "y"):
@@ -1032,32 +1401,116 @@ elif (anak_pr > 0 and anak_lk == 0):
         ambil_asalmasalah = asalmasalah_istri
     if(ayah == "0" and kakek == "0"):
         if(pewaris == "istri" or pewaris == "ISTRI" or pewaris == "Istri" or pewaris == "2"):
-            if(ayah == "0" and kakek == "0" and ibu == "y" or nenek > 0):
+            if(ibu == "y" and nenek == 0):
                 if(anak_pr > 1):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
                 elif(anak_pr == 1):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    else:
+                        if(suami == "y"):
+                            if(cucu_pr > 0):
+                                totalasalmasalah = ambil_asalmasalah + asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_ibu
+                            else:
+                                totalasalmasalah = ambil_asalmasalah
+                        else : 
+                            totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(ibu == "0" and nenek > 0):
+                if(anak_pr > 1):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
+                elif(anak_pr == 1):
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    else:
+                        if(suami == "y"):
+                            if(cucu_pr > 0):
+                                totalasalmasalah = ambil_asalmasalah + asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_nenek
+                            else:
+                                totalasalmasalah = ambil_asalmasalah
+                        else : 
+                            totalasalmasalah = asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_cucupr
+                            # totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(ibu == "0" and nenek == 0):
+                if(anak_pr > 1):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
+                elif(anak_pr == 1):
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_anakpr
+                    else:
+                        if(suami == 'y'):
+                            totalasalmasalah = ambil_asalmasalah
+                        else:
+                            totalasalmasalah = asalmasalah_anakpr + asalmasalah_cucupr
                 else:
                     totalasalmasalah = ambil_asalmasalah
             else:
-                totalasalmasalah = ambil_asalmasalah + \
-                asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                # menghilangkan hitung asalmasalah cucu perempuan ketika ada cucu laki-laki
+                # bagian cucu perempuan dipindakhkan ke bagian sisa
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
         elif(pewaris == "suami" or pewaris == "SUAMI" or pewaris == "Suami" or pewaris == "1"):
             # old
             # totalasalmasalah = ambil_asalmasalah
-            if(ayah == "0" and kakek == "0" and ibu == "y" or nenek > 0):
+            if(ibu == "y" and nenek == 0):
                 if(anak_pr > 1):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
                 elif(anak_pr == 1):
-                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    else:
+                        if(istri > 0):
+                            totalasalmasalah = ambil_asalmasalah
+                        else : 
+                            totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(ibu == "0" and nenek > 0):
+                if(anak_pr > 1):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
+                elif(anak_pr == 1):
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr
+                    else:
+                        if(istri > 0):
+                            totalasalmasalah = ambil_asalmasalah
+                        else:
+                            totalasalmasalah = asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+                            # totalasalmasalah = ambil_asalmasalah + asalmasalah_ibu + asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+                else:
+                    totalasalmasalah = ambil_asalmasalah
+            elif(ibu == "0" and nenek == 0):
+                if(anak_pr > 1):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
+                elif(anak_pr == 1):
+                    if(cucu_lk > 0):
+                        totalasalmasalah = ambil_asalmasalah + asalmasalah_anakpr
+                    else:
+                        if(istri > 0):
+                            totalasalmasalah = ambil_asalmasalah
+                        else:
+                            totalasalmasalah = asalmasalah_anakpr + asalmasalah_cucupr
                 else:
                     totalasalmasalah = ambil_asalmasalah
             else:
-                totalasalmasalah = ambil_asalmasalah + \
-                asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                # menghilangkan hitung asalmasalah cucu perempuan ketika ada cucu laki-laki
+                # bagian cucu perempuan dipindakhkan ke bagian sisa
+                if(cucu_lk > 0):
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+                else:
+                    totalasalmasalah = ambil_asalmasalah + asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
     else:
-        totalasalmasalah = ambil_asalmasalah + \
+        if(cucu_lk > 0):
+            totalasalmasalah = ambil_asalmasalah + \
             asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek
+        else:
+            totalasalmasalah = ambil_asalmasalah + \
+                asalmasalah_ayah + asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_nenek + asalmasalah_kakek + asalmasalah_cucupr
     sisa = asalmasalah - totalasalmasalah
     jumlahasalmasalah = totalasalmasalah
 elif(anak_pr > 0 and anak_lk > 0):
@@ -1120,6 +1573,12 @@ if (jumlahasalmasalah == asalmasalah):
             finalbagianistri = (asalmasalah_istri * suku_bagian_istri)
             ambil_bagian_harta = finalbagianistri
     # batas penghitungan bagian suami / istri
+    # bagiananakpr
+    if(asalmasalah_anakpr == 0):
+        finalbagiananakpr = 0
+    else:
+        suku_bagian_anak_pr = harta / asalmasalah
+        finalbagiananakpr = (asalmasalah_anakpr * suku_bagian_anak_pr)
     # perhitungan bagian nenek
     if(asalmasalah_nenek != 0):
         if(ayah == "0" and kakek =="0" and anak_lk == 0 and anak_pr == 0 and cucu_lk == 0 and cucu_pr == 0 and saudara_knd == 0 and saudari_knd == 0 and saudara_sayah == 0 and saudari_sayah == 0 and saudara_sibu == 0 and saudari_sibu == 0):
@@ -1155,8 +1614,9 @@ if (jumlahasalmasalah == asalmasalah):
     #ayah
     if (asalmasalah_ayah == 0):
         finalbagianayah = 0
+        sisa_harta_ayah = 0
     else:
-        if (bagianayah == "sisa"):
+        if (bagianayah == "sisa" and bagiansisa == ""):
             # old
             sisa_harta = harta - ambil_bagian_harta
             # new
@@ -1169,44 +1629,57 @@ if (jumlahasalmasalah == asalmasalah):
                 asalmasalah_sisa = asalmasalah_ibu + asalmasalah_ayah + asalmasalah_nenek
             suku_bagian = sisa_harta / asalmasalah_sisa
             finalbagianayah = suku_bagian * asalmasalah_ayah
+            sisa_harta_ayah = 0
+        elif (bagianayah == 0.16 and bagiansisa == "+sisa"):
+            harta_cucupr = (asalmasalah_cucupr * harta) / jumlahasalmasalah
+            finalbagianayah = (asalmasalah_ayah * harta) / jumlahasalmasalah
+            sisa_harta_ayah = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - harta_cucupr - finalbagiananakpr
+            if(sisa_harta_ayah <= 0):
+                sisa_harta_ayah = 0.0
         else:
+            sisa_harta_ayah = 0
             finalbagianayah = (asalmasalah_ayah * harta) / jumlahasalmasalah
     # batas penghitungan bagian ayah/kakek
     # batas antisipasi Zero division error
-    print("=" * 50)
+    print("=" * 40)
 
     if (suami == "y"):
-        print(f"Bagian Harta Suami : {int(finalbagiansuami)}")
+        print(f"Bagian Harta Suami : {round(finalbagiansuami, 2)}")
     else:
         # tampil bagian istri jika lebih 1 harta per istri
         if (istri > 1):
             bagi_harta_istri = finalbagianistri / istri
-            print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+            print(f"Bagian Harta Istri : {round(finalbagianistri , 2)}")
             j = 1
             while j <= istri:
                 print("Harta Untuk Istri Ke- ",
-                      j, " = ", bagi_harta_istri)
+                      j, " = ", round(bagi_harta_istri, 2))
                 j += 1
         else:
             if (istri != 0):
-                print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+                print(f"Bagian Harta Istri : {round(finalbagianistri, 2)}")
     if(ayah == "y"):
-        print(f"Bagian Harta Ayah : {int(finalbagianayah)}")
+        if(bagiansisa == "+sisa"):
+            print(f"Bagian Harta Ayah 1/6 + Sisa : {round(finalbagianayah, 2)} + {round(sisa_harta_ayah, 2)}")
+            print(f"Jumlah Harta Ayah : {round(finalbagianayah + sisa_harta_ayah, 2)}")
+        else:
+            print(f"Bagian Harta Ayah : {round(finalbagianayah, 2)}")
     if(ibu == "y"):
-        print(f"Bagian Harta Ibu : {int(finalbagianibu)}")
+        print(f"Bagian Harta Ibu : {round(finalbagianibu, 2)}")
     if (nenek > 1):
             bagi_harta_nenek = finalbagiannenek / nenek
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
             j = 1
             while j <= nenek:
                 print("Harta Untuk Nenek Ke- ",
-                      j, " = ", bagi_harta_nenek)
+                      j, " = ", round(bagi_harta_nenek, 2))
                 j += 1
     else:
         if (nenek != 0):
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
+    sisa_harta_kakek = 0
     if(kakek == "y"):
-        if (bagiankakek == "sisa"):
+        if (bagiankakek == "sisa" and bagiansisakakek == ""):
             if(pewaris == "suami" or pewaris == "SUAMI" or pewaris == "Suami" or pewaris == "1"):
                 if(istri > 0 and ibu == "y"):
                     sisa_harta_kakek = harta - ambil_bagian_harta   
@@ -1241,64 +1714,168 @@ if (jumlahasalmasalah == asalmasalah):
                     asalmasalah_sisa = asalmasalah_kakek
             suku_bagian = sisa_harta_kakek / asalmasalah_sisa
             finalbagiankakek = suku_bagian * asalmasalah_kakek
-        print(f"Bagian Harta Kakek : {int(finalbagiankakek)}")
+        elif (bagiankakek == 0.16 and bagiansisakakek == "+sisa"):
+            harta_cucupr = (asalmasalah_cucupr * harta) / jumlahasalmasalah
+            finalbagiankakek = (asalmasalah_kakek * harta) / jumlahasalmasalah
+            sisa_harta_kakek = harta - ambil_bagian_harta - finalbagiankakek - finalbagianibu - finalbagiannenek - harta_cucupr - finalbagiananakpr
+        # tampil harta kakek
+        if(bagiansisakakek == "+sisa"):
+            if(sisa_harta_kakek <= 0):
+                sisa_harta_kakek = 0.0
+            print(f"Bagian Harta Kakek 1/6 + sisa: {round(finalbagiankakek, 2)} + {round(sisa_harta_kakek, 2)}")
+            print(f"Jumlah Harta Kakek : {round(finalbagiankakek + sisa_harta_kakek, 2)}")
+        else:
+            print(f"Bagian Harta Kakek : {round(finalbagiankakek, 2)}")
+    # bagian harta anak laki dan perempuan
     if (anak_pr > 0 or anak_lk > 0):
         if (anak_pr > 0 and anak_lk == 0):
             asalmasalah_anakpr = (1 * anak_pr)
             asalmasalah_sisa = asalmasalah_anakpr
+            harta_cucupr = (asalmasalah_cucupr * harta) / jumlahasalmasalah
             # sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu
-            sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-            print(f"Sisa Harta : {int(sisa_harta)}")
+            sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - harta_cucupr
+            print(f"Sisa Harta : {round(sisa_harta, 2)}")
             suku_bagian = sisa_harta / asalmasalah_sisa
             sisa_harta_anak_pr = (1 * suku_bagian)
             bagianharta_anak_pr = sisa_harta_anak_pr * anak_pr
-            print(f"Harta Anak Perempuan : {int(bagianharta_anak_pr)}")
+            print(f"Harta Anak Perempuan : {round(bagianharta_anak_pr, 2)}")
             # pembagian harta per anak perempuan
-            k = 1
-            while k <= anak_pr:
-                print("Harta Untuk Anak Perempuan ",
-                      k, " = ", sisa_harta_anak_pr)
-                k += 1
+            if(anak_pr > 1):
+                k = 1
+                while k <= anak_pr:
+                    print("Harta Untuk Anak Perempuan ",
+                        k, " = ", round(sisa_harta_anak_pr,2))
+                    k += 1
         elif (anak_lk > 0 and anak_pr == 0):
             asalmasalah_anaklk = (1 * anak_lk)
             asalmasalah_sisa = asalmasalah_anaklk
             sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-            print(f"Sisa Harta : {int(sisa_harta)}")
+            print(f"Sisa Harta : {round(sisa_harta, 2)}")
             suku_bagian = sisa_harta / asalmasalah_sisa
             sisa_harta_anak_lk = (1 * suku_bagian)
             bagianharta_anak_lk = sisa_harta_anak_lk * anak_lk
-            print(f"Harta Anak Laki-Laki : {int(bagianharta_anak_lk)}")
+            print(f"Harta Anak Laki-Laki : {round(bagianharta_anak_lk, 2)}")
             # pembagian harta per anak laki-laki
-            j = 1
-            while j <= anak_lk:
-                print("Harta Untuk Anak Laki - Laki ",
-                      j, " = ", sisa_harta_anak_lk)
-                j += 1
+            if(anak_lk > 1):
+                j = 1
+                while j <= anak_lk:
+                    print("Harta Untuk Anak Laki - Laki ",
+                        j, " = ", round(sisa_harta_anak_lk, 2))
+                    j += 1
         elif (anak_lk > 0 and anak_lk > 0):
             asalmasalah_anaklk = (2 * anak_lk)
             asalmasalah_anakpr = (1 * anak_pr)
             asalmasalah_sisa = asalmasalah_anaklk + asalmasalah_anakpr
             sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-            print(f"Sisa Harta : {int(sisa_harta)}")
+            print(f"Sisa Harta : {round(sisa_harta, 2)}")
             suku_bagian = sisa_harta / asalmasalah_sisa
             sisa_harta_anak_pr = (1 * suku_bagian)
             sisa_harta_anak_lk = (2 * suku_bagian)
             bagianharta_anak_pr = sisa_harta_anak_pr * anak_pr
             bagianharta_anak_lk = sisa_harta_anak_lk * anak_lk
-            print(f"Harta Anak Perempuan : {int(bagianharta_anak_pr)}")
-            print(f"Harta Anak Laki-Laki : {int(bagianharta_anak_lk)}")
+            print(f"Harta Anak Perempuan : {round(bagianharta_anak_pr, 2)}")
             # pembagian harta per anak perempuan
-            i = 1
-            while i <= anak_pr:
-                print("Harta Untuk Anak Perempuan ",
-                      i, " = ", sisa_harta_anak_pr)
-                i += 1
+            if(anak_pr > 1):
+                i = 1
+                while i <= anak_pr:
+                    print("Harta Untuk Anak Perempuan ",
+                        i, " = ", round(sisa_harta_anak_pr, 2))
+                    i += 1
             # pembagian harta per anak laki-laki
-            j = 1
-            while j <= anak_lk:
-                print("Harta Untuk Anak Laki - Laki ",
-                      j, " = ", sisa_harta_anak_lk)
-                j += 1
+            print(f"Harta Anak Laki-Laki : {round(bagianharta_anak_lk, 2)}")
+            if(anak_lk > 1):
+                j = 1
+                while j <= anak_lk:
+                    print("Harta Untuk Anak Laki - Laki ",
+                        j, " = ", round(sisa_harta_anak_lk, 2))
+                    j += 1
+    # bagianharta cucu
+    if (cucu_pr > 0 or cucu_lk > 0):
+        if (cucu_pr > 0 and cucu_lk == 0):
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah_sisa = asalmasalah_cucupr
+            # sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu
+            if(kakek == "y" and ayah == "0"):
+                sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - sisa_harta_kakek - finalbagiananakpr
+            else:
+                sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - sisa_harta_ayah - finalbagiananakpr
+            if(sisa_harta <= 0):
+                sisa_harta_cucu_pr = 0.0
+                bagianharta_cucu_pr = 0.0
+            else:
+                suku_bagian = sisa_harta / asalmasalah_sisa
+                sisa_harta_cucu_pr = (1 * suku_bagian)
+                bagianharta_cucu_pr = sisa_harta_cucu_pr * cucu_pr
+                print(f"Sisa Harta : {round(sisa_harta, 2)}")
+            # pembagian harta per cucu perempuan
+            print("-" * 25)
+            if(bagiancucupr != "termahjub"):
+                print(f"Harta Cucu Perempuan : {round(bagianharta_cucu_pr, 2)}")
+                if(cucu_pr > 1):
+                    k = 1
+                    while k <= cucu_pr:
+                        print("Harta Untuk Cucu Perempuan ",
+                            k, " = ", round(sisa_harta_cucu_pr, 2))
+                        k += 1
+        elif (cucu_lk > 0 and cucu_pr == 0):
+            asalmasalah_cuculk = (1 * cucu_lk)
+            asalmasalah_sisa = asalmasalah_cuculk
+            sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - finalbagiananakpr
+            if(sisa_harta <= 0):
+                sisa_harta_cucu_lk = 0.0
+                bagianharta_cucu_lk = 0.0
+            else:
+                print(f"Sisa Harta : {round(sisa_harta, 2)}")
+                suku_bagian = sisa_harta / asalmasalah_sisa
+                sisa_harta_cucu_lk = (1 * suku_bagian)
+                bagianharta_cucu_lk = sisa_harta_cucu_lk * cucu_lk
+            print("-" * 25)
+            # pembagian harta per cucu laki-laki
+            if(bagiancuculk != "termahjub"):
+                print(f"Harta Cucu Laki-Laki : {round(bagianharta_cucu_lk, 2)}")
+                if(cucu_lk > 1):
+                    j = 1
+                    while j <= cucu_lk:
+                        print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                        j += 1
+        elif (cucu_lk > 0 and cucu_lk > 0):
+            asalmasalah_cuculk = (2 * cucu_lk)
+            asalmasalah_cucupr = (1 * cucu_pr)
+            asalmasalah_sisa = asalmasalah_cuculk + asalmasalah_cucupr
+            sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - finalbagiananakpr
+            if(sisa_harta <= 0):
+                sisa_harta_cucu_lk = 0.0
+                bagianharta_cucu_lk = 0.0
+                sisa_harta_cucu_pr = 0.0
+                bagianharta_cucu_pr = 0.0
+            else:
+                print(f"Sisa Harta : {round(sisa_harta, 2)}")
+                suku_bagian = sisa_harta / asalmasalah_sisa
+                sisa_harta_cucu_pr = (1 * suku_bagian)
+                sisa_harta_cucu_lk = (2 * suku_bagian)
+                bagianharta_cucu_pr = sisa_harta_cucu_pr * cucu_pr
+                bagianharta_cucu_lk = sisa_harta_cucu_lk * cucu_lk
+            print("-" * 25)
+            # pembagian harta per cucu perempuan
+            if(bagiancucupr != "termahjub"):
+                print(f"Harta Cucu Perempuan : {round(bagianharta_cucu_pr, 2)}")
+                if(cucu_pr > 1):
+                    i = 1
+                    while i <= cucu_pr:
+                        print("Harta Untuk Cucu Perempuan ",
+                            i, " = ", round(sisa_harta_cucu_pr, 2))
+                        i += 1
+            # pembagian harta per cucu laki-laki
+            print("-" * 25)
+            if(bagiancuculk != "termahjub"):
+                print(f"Harta Cucu Laki-Laki : {round(bagianharta_cucu_lk, 2)}")
+                if(cucu_lk > 1):
+                    j = 1
+                    while j <= cucu_lk:
+                        print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                        j += 1
 elif (jumlahasalmasalah > asalmasalah):
     print(f"Jumlah Siham : {int(totalasalmasalah)}")
     if(sisa > 0):
@@ -1377,17 +1954,85 @@ elif (jumlahasalmasalah > asalmasalah):
         else:
             finalbagianayah = (asalmasalah_ayah * harta) / jumlahasalmasalah
     # batas penghitungan bagian ayah/kakek
-    finalbagiananakpr = (asalmasalah_anakpr * suku_bagian)
+    if(asalmasalah_anakpr == 0):
+        finalbagiananakpr = 0
+    else:
+        finalbagiananakpr = (asalmasalah_anakpr * suku_bagian)
     print("=" * 20)
     print(f"Asal Masalah Awal : {int(asalmasalah)}")
     print(f"Asal Masalah Menjadi : {int(jumlahasalmasalah)}")
+    # cucu perempuan
+    # bagian cucu laki dan cucu perempuan
+    finalbagiancucupr = 0
+    finalbagiancuculk = 0
+    sisa_cucu = 0
+    cucu = ""
+    if(cucu_pr > 0 and cucu_lk == 0):
+        finalbagiancuculk = 0
+        cucu = "kondisi1"
+        if(bagiancucupr != "termahjub") :  
+            if (cucu_pr > 0 and anak_pr > 0):
+                if(ayah == "0" and kakek == "0"):
+                    if(ibu == "y"):
+                        asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_ibu
+                    else:
+                        if(nenek > 0):
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_nenek
+                        else:
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr
+                    sisa_harta_cucu_pr = harta - ambil_bagian_harta
+                    suku_bagian_cucu = sisa_harta_cucu_pr / asalmasalah_sisa
+                else:
+                    suku_bagian_cucu = harta / jumlahasalmasalah
+                finalbagiancucupr = asalmasalah_cucupr * suku_bagian_cucu
+                # sisa_harta_cucu_pr = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
+            else:
+                finalbagiancucupr = asalmasalah_cucupr * suku_bagian
+        else:
+            finalbagiancucupr = 0
+    elif(cucu_pr == 0 and cucu_lk > 0):
+        if(bagiancuculk != "termahjub"):
+            cucu = "kondisi2"
+            sisa_harta_cucu = harta - ambil_bagian_harta - finalbagiananakpr - finalbagianayah - finalbagiankakek - finalbagianibu - finalbagiannenek
+            if(sisa_harta_cucu <= 0):
+                sisa_harta_cucu_lk = 0
+                finalbagiancuculk = 0
+            else:
+                sisa_harta_cucu_lk = (1 * sisa_harta_cucu)
+                finalbagiancuculk = sisa_harta_cucu_lk * cucu_lk
+        else:
+            finalbagiancuculk = 0
+        sisa_cucu = finalbagiancuculk
+    
+    elif(cucu_pr > 0 and cucu_lk > 0):
+        cucu = "kondisi3"
+        asalmasalah_sisa_cucu = asalmasalah_cucupr + asalmasalah_cuculk
+        sisa_harta_cucu = harta - ambil_bagian_harta - finalbagiananakpr - finalbagianayah - finalbagiankakek - finalbagianibu - finalbagiannenek
+        if(sisa_harta_cucu <= 0):
+            sisa_harta_cucu = 0
+        else:
+            sisa_harta_cucu = sisa_harta_cucu
+        suku_bagian_cucu = sisa_harta_cucu / asalmasalah_sisa_cucu
+        sisa_harta_cucu_pr = (1 * suku_bagian_cucu)
+        sisa_harta_cucu_lk = (2 * suku_bagian_cucu)
+        if(bagiancucupr != "termahjub"):
+            finalbagiancucupr = sisa_harta_cucu_pr * cucu_pr
+        else:
+            finalbagiancucupr = 0
+        if(bagiancuculk != "termahjub"):
+            finalbagiancuculk = sisa_harta_cucu_lk * cucu_lk
+        else:
+            finalbagiancuculk = 0
+        sisa_cucu = finalbagiancucupr + finalbagiancuculk 
+        
+    # batas cucu perempuan
     if (suami == "y"):
-        print(f"Bagian Harta Suami : {int(finalbagiansuami)}")
+        print(f"Bagian Harta Suami : {round(finalbagiansuami, 2)}")
     else:
         # tampil bagian istri jika lebih 1 harta per istri
         if (istri > 1):
             bagi_harta_istri = finalbagianistri / istri
-            print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+            print(f"Bagian Harta Istri : {round(finalbagianistri, 2)}")
             j = 1
             while j <= istri:
                 print("Harta Untuk Istri Ke- ",
@@ -1395,26 +2040,26 @@ elif (jumlahasalmasalah > asalmasalah):
                 j += 1
         else:
             if (istri != 0):
-                print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+                print(f"Bagian Harta Istri : {round(finalbagianistri , 2)}")
     if (bagianayah == 0.16 and bagiansisa == "+sisa"):
-        print(f"Bagian Harta Ayah 1/6 + sisa: {int(finalbagianayah)} + {int(sisa_harta)}")
-        print(f"Harta untuk ayah =  {int(finalbagianayah + sisa_harta)}")
+        print(f"Bagian Harta Ayah 1/6 + sisa: {round(finalbagianayah, 2)} + {round(sisa_harta, 2)}")
+        print(f"Harta untuk ayah =  {round(finalbagianayah + sisa_harta, 2)}")
     else:
         if(ayah == "y"):
-            print(f"Bagian Harta Ayah sini : {int(finalbagianayah)}")
+            print(f"Bagian Harta Ayah : {round(finalbagianayah, 2)}")
     if(ibu == "y"):
-        print(f"Bagian Harta Ibu : {int(finalbagianibu)}")
+        print(f"Bagian Harta Ibu : {round(finalbagianibu, 2)}")
     if (nenek > 1):
             bagi_harta_nenek = finalbagiannenek / nenek
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
             j = 1
             while j <= nenek:
                 print("Harta Untuk Nenek Ke- ",
-                      j, " = ", bagi_harta_nenek)
+                      j, " = ", round(bagi_harta_nenek, 2))
                 j += 1
     else:
         if (nenek != 0):
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
     # tampil bagian kakek
     if(kakek == "y"):
         if (bagiankakek == "sisa" and bagiansisakakek == ""):
@@ -1452,28 +2097,28 @@ elif (jumlahasalmasalah > asalmasalah):
                     asalmasalah_sisa = asalmasalah_kakek
             suku_bagian = sisa_harta_kakek / asalmasalah_sisa
             finalbagiankakek = suku_bagian * asalmasalah_kakek
-            print(f"Bagian Harta Kakek : {int(finalbagiankakek)}")
+            print(f"Bagian Harta Kakek : {round(finalbagiankakek, 2)}")
         elif (bagiankakek == 0.16 and bagiansisakakek == "+sisa"):
-            print(f"Bagian Harta Kakek 1/6 + sisa: {int(finalbagiankakek)} + {int(sisa_harta)}")
-            print(f"Harta untuk kakek =  {int(finalbagiankakek + sisa_harta)}")
+            print(f"Bagian Harta Kakek 1/6 + sisa: {round(finalbagiankakek, 2)} + {round(sisa_harta ,2)}")
+            print(f"Harta untuk kakek =  {round(finalbagiankakek + sisa_harta, 2)}")
         else:
-            print(f"Bagian Harta Kakek : {int(finalbagiankakek)}")
+            print(f"Bagian Harta Kakek : {round(finalbagiankakek, 2)}")
     if (anak_pr > 0 and anak_lk == 0):
         asalmasalah_anakpr = (1 * anak_pr)
         asalmasalah_sisa = asalmasalah_anakpr
         # batas ambil bagian suami / istri
         # sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu
-        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-        print(f"Sisa Harta : {int(sisa_harta)}")
+        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek - finalbagiancucupr
+        print(f"Sisa Harta : {round(sisa_harta , 2)}")
         suku_bagian = sisa_harta / asalmasalah_sisa
         sisa_harta_anak_pr = (1 * suku_bagian)
         bagianharta_anak_pr = sisa_harta_anak_pr * anak_pr
-        print(f"Harta Anak Perempuan : {int(bagianharta_anak_pr)}")
+        print(f"Harta Anak Perempuan : {round(bagianharta_anak_pr ,2)}")
         # pembagian harta per anak perempuan
         k = 1
         while k <= anak_pr:
             print("Harta Untuk Anak Perempuan ",
-                    k, " = ", sisa_harta_anak_pr)
+                    k, " = ", round(sisa_harta_anak_pr, 2))
             k += 1
     elif (anak_lk > 0 and anak_pr == 0):
         asalmasalah_anaklk = (1 * anak_lk)
@@ -1481,16 +2126,16 @@ elif (jumlahasalmasalah > asalmasalah):
         # batas ambil bagian suami / istri
         # sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu
         sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-        print(f"Sisa Harta : {int(sisa_harta)}")
+        print(f"Sisa Harta : {round(sisa_harta, 2)}")
         suku_bagian = sisa_harta / asalmasalah_sisa
         sisa_harta_anak_lk = (1 * suku_bagian)
         bagianharta_anak_lk = sisa_harta_anak_lk * anak_lk
-        print(f"Harta Anak Laki-Laki : {int(bagianharta_anak_lk)}")
+        print(f"Harta Anak Laki-Laki : {round(bagianharta_anak_lk, 2)}")
         # pembagian harta per anak laki-laki
         j = 1
         while j <= anak_lk:
             print("Harta Untuk Anak Laki - Laki ",
-                    j, " = ", sisa_harta_anak_lk)
+                    j, " = ", round(sisa_harta_anak_lk, 2))
             j += 1
     elif (anak_lk > 0 and anak_pr > 0):
         asalmasalah_anaklk = (2 * anak_lk)
@@ -1504,26 +2149,82 @@ elif (jumlahasalmasalah > asalmasalah):
         # batas ambil bagian suami / istri
         # sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu
         sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
-        print(f"Sisa Harta : {int(sisa_harta)}")
+        print(f"Sisa Harta : {round(sisa_harta, 2)}")
         suku_bagian = sisa_harta / asalmasalah_sisa
         sisa_harta_anak_pr = (1 * suku_bagian)
         sisa_harta_anak_lk = (2 * suku_bagian)
         bagianharta_anak_pr = sisa_harta_anak_pr * anak_pr
         bagianharta_anak_lk = sisa_harta_anak_lk * anak_lk
-        print(f"Harta Anak Perempuan : {int(bagianharta_anak_pr)}")
-        print(f"Harta Anak Laki-Laki : {int(bagianharta_anak_lk)}")
+        print(f"Harta Anak Perempuan : {round(bagianharta_anak_pr, 2)}")
+        print(f"Harta Anak Laki-Laki : {round(bagianharta_anak_lk, 2)}")
         # pembagian harta per anak perempuan
         i = 1
         while i <= anak_pr:
             print("Harta Untuk Anak Perempuan ",
-                    i, " = ", sisa_harta_anak_pr)
+                    i, " = ", round(sisa_harta_anak_pr, 2))
             i += 1
         # pembagian harta per anak laki-laki
         j = 1
         while j <= anak_lk:
             print("Harta Untuk Anak Laki - Laki ",
-                    j, " = ", sisa_harta_anak_lk)
+                    j, " = ", round(sisa_harta_anak_lk, 2))
             j += 1
+    # # bagian harta cucu pr
+    # if(cucu_pr > 0):
+    #     print(f"Bagian Harta Cucu Perempuan : {int(finalbagiancucupr)}")
+    #     if(finalbagiancucupr == 0):
+    #         sisa_harta_cucu_pr = 0
+    #     else:    
+    #         sisa_harta_cucu_pr = finalbagiancucupr / cucu_pr
+    #     # pembagian harta per cucu perempuan
+    #     if(cucu_pr > 1):
+    #         i = 1
+    #         while i <= cucu_pr:
+    #             print("Harta Untuk Cucu Perempuan ", i, " = ", sisa_harta_cucu_pr)
+    #             i += 1
+    # bagian harta cucu pr
+    if(cucu == "kondisi1"):
+        if(bagiancucupr != "termahjub"):
+            print(f"Bagian Harta Cucu Perempuan : {round(finalbagiancucupr, 2)}")
+            if(finalbagiancucupr == 0):
+                sisa_harta_cucu_pr = 0
+            else:    
+                sisa_harta_cucu_pr = finalbagiancucupr / cucu_pr
+            # pembagian harta per cucu perempuan
+            if(cucu_pr > 1):
+                i = 1
+                while i <= cucu_pr:
+                    print("Harta Untuk Cucu Perempuan ", i, " = ", round(sisa_harta_cucu_pr, 2))
+                    i += 1
+    elif(cucu == "kondisi2"):
+        # pembagian harta per cucu laki-laki
+        if(bagiancuculk != "termahjub"):
+            print(f"Harta Cucu Laki-Laki : {round(finalbagiancuculk, 2)}")
+            if(cucu_lk > 1):
+                j = 1
+                while j <= cucu_lk:
+                    print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                    j += 1
+    elif(cucu == "kondisi3"):
+        # pembagian harta per cucu perempuan
+        if(bagiancucupr != "termahjub"):
+            print(f"Harta Cucu Perempuan : {round(finalbagiancucupr, 2)}")
+            if(cucu_pr > 1):
+                i = 1
+                while i <= cucu_pr:
+                    print("Harta Untuk Cucu Perempuan ",
+                            i, " = ", sisa_harta_cucu_pr)
+                    i += 1
+        # pembagian harta per cucu laki-laki
+        if(bagiancuculk != "termahjub"):
+            print(f"Harta Cucu Laki-Laki : {round(finalbagiancuculk, 2)}")
+            if(cucu_lk > 1):
+                j = 1
+                while j <= cucu_lk:
+                    print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                    j += 1
 elif (jumlahasalmasalah < asalmasalah):
     tampil = ""
     print(f"Jumlah Siham : {int(totalasalmasalah)}")
@@ -1573,12 +2274,23 @@ elif (jumlahasalmasalah < asalmasalah):
             else:
                 finalbagianibu = asalmasalah_ibu * suku_bagian
         else:
-            if(ayah == "0" and kakek == "0" and anak_pr == 1 and ibu == "y"):
-                asalmasalah_sisa = asalmasalah_ibu + asalmasalah_anakpr
+            if(ayah == "0" and kakek == "0" and anak_pr == 1 and ibu == "y" and cucu_lk == 0):
+                if(cucu_pr > 0):
+                    asalmasalah_sisa = asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_cucupr
+                else:
+                    asalmasalah_sisa = asalmasalah_ibu + asalmasalah_anakpr
                 tampil = "ubah"
                 sisa_harta = harta - ambil_bagian_harta
                 finalbagianibu = (sisa_harta * asalmasalah_ibu) / int(asalmasalah_sisa)
-            elif(ayah == "0"  and kakek == "0" and anak_pr > 1 and ibu == "y"):
+            elif(ayah == "0" and kakek == "0" and anak_pr == 0 and ibu == "y" and cucu_lk == 0):
+                if(cucu_pr > 0):
+                    tampil = "ubah"
+                    asalmasalah_sisa = asalmasalah_ibu + asalmasalah_cucupr
+                    sisa_harta = harta - ambil_bagian_harta
+                    finalbagianibu = (sisa_harta * asalmasalah_ibu) / int(asalmasalah_sisa)
+                else:
+                    finalbagianibu = suku_bagian * asalmasalah_ibu
+            elif(ayah == "0"  and kakek == "0" and anak_pr > 1 and ibu == "y" and cucu_lk == 0):
                 tampil = "ubah"
                 asalmasalah_sisa = asalmasalah_ibu + asalmasalah_anakpr
                 sisa_harta = harta - ambil_bagian_harta
@@ -1598,12 +2310,23 @@ elif (jumlahasalmasalah < asalmasalah):
         finalbagiannenek = 0
     else:
         sisa_harta = harta - ambil_bagian_harta
-        if(ayah == "0" and kakek == "0" and anak_pr == 1 and nenek > 0):
-            asalmasalah_sisa = asalmasalah_nenek + asalmasalah_anakpr
+        if(ayah == "0" and kakek == "0" and anak_pr == 1 and nenek > 0 and cucu_lk == 0):
+            if(cucu_pr > 0):
+                asalmasalah_sisa = asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
+            else:
+                asalmasalah_sisa = asalmasalah_nenek + asalmasalah_anakpr
             tampil = "ubah"
             sisa_harta = harta - ambil_bagian_harta
             finalbagiannenek = (sisa_harta * asalmasalah_nenek) / int(asalmasalah_sisa)
-        elif(ayah == "0"  and kakek == "0" and anak_pr > 1 and nenek > 0):
+        elif(ayah == "0" and kakek == "0" and anak_pr == 0 and nenek > 0 and cucu_lk == 0):
+            if(cucu_pr > 0):
+                tampil = "ubah"
+                sisa_harta = harta - ambil_bagian_harta
+                asalmasalah_sisa = asalmasalah_nenek + asalmasalah_cucupr
+                finalbagiannenek = (sisa_harta * asalmasalah_nenek) / int(asalmasalah_sisa)
+            else:
+                finalbagiannenek = suku_bagian * asalmasalah_nenek
+        elif(ayah == "0"  and kakek == "0" and anak_pr > 1 and nenek > 0 and cucu_lk == 0):
             tampil = "ubah"
             asalmasalah_sisa = asalmasalah_nenek + asalmasalah_anakpr
             sisa_harta = harta - ambil_bagian_harta
@@ -1669,58 +2392,169 @@ elif (jumlahasalmasalah < asalmasalah):
     if(pewaris == "istri" or pewaris == "Istri" or pewaris == "ISTRI" or pewaris == "2"):
         if(tampil == "ubah"):
             if(anak_pr > 0 and nenek > 0):
-                asalmasalah_ubah = asalmasalah_nenek + asalmasalah_anakpr
+                asalmasalah_ubah = asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
                 print(f"Asal Masalah Sisa {sisa}")
                 print(f"Siham Anak Perempuan : {asalmasalah_anakpr}")
+                if(cucu_pr > 0):
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
                 print(f"Siham Nenek : {asalmasalah_nenek}")
                 print(f"Asal Masalah Awal : 6")
                 print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
                 print("=" * 20)
             elif(anak_pr > 0 and ibu == "y"):
-                asalmasalah_ubah = asalmasalah_ibu + asalmasalah_anakpr
+                asalmasalah_ubah = asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_cucupr
                 print(f"Asal Masalah Sisa {sisa}")
                 print(f"Siham Anak Perempuan : {asalmasalah_anakpr}")
+                if(cucu_pr > 0):
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
                 print(f"Siham Ibu : {asalmasalah_ibu}")
                 print(f"Asal Masalah Awal : 6")
                 print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
                 print("=" * 20)
             else:
-                print(f"Asal Masalah Awal : {int(asalmasalah)}")
-                print(f"Asal Masalah Menjadi : {int(jumlahasalmasalah)}")
+                if(cucu_pr > 0 and ibu == "y"):
+                    asalmasalah_ubah = asalmasalah_ibu +  asalmasalah_cucupr
+                    print(f"Asal Masalah Sisa {sisa}")
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
+                    print(f"Siham Ibu : {asalmasalah_ibu}")
+                    print(f"Asal Masalah Awal : 6")
+                    print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
+                    print("=" * 20)
+                elif(cucu_pr > 0 and nenek > 0):
+                    asalmasalah_ubah = asalmasalah_nenek +  asalmasalah_cucupr
+                    print(f"Asal Masalah Sisa {sisa}")
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
+                    print(f"Siham Nenek : {asalmasalah_nenek}")
+                    print(f"Asal Masalah Awal : 6")
+                    print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
+                    print("=" * 20)
+                else:
+                    print(f"Asal Masalah Awal : {int(asalmasalah)}")
+                    print(f"Asal Masalah Menjadi : {int(jumlahasalmasalah)}")
         else:
             print(f"Asal Masalah Sisa : {int(asalmasalah - jumlahasalmasalah)}")
     else :
         if(tampil == "ubah"):
             if(anak_pr > 0 and nenek > 0):
-                asalmasalah_ubah = asalmasalah_nenek + asalmasalah_anakpr
+                asalmasalah_ubah = asalmasalah_nenek + asalmasalah_anakpr + asalmasalah_cucupr
                 print(f"Asal Masalah Sisa {sisa}")
                 print(f"Siham Anak Perempuan : {asalmasalah_anakpr}")
+                if(cucu_pr > 0):
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
                 print(f"Siham Nenek : {asalmasalah_nenek}")
                 print(f"Asal Masalah Awal : 6")
                 print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
                 print("=" * 20)
             elif(anak_pr > 0 and ibu == "y"):
-                asalmasalah_ubah = asalmasalah_ibu + asalmasalah_anakpr
+                asalmasalah_ubah = asalmasalah_ibu + asalmasalah_anakpr + asalmasalah_cucupr
                 print(f"Asal Masalah Sisa {sisa}")
                 print(f"Siham Anak Perempuan : {asalmasalah_anakpr}")
+                if(cucu_pr > 0):
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
                 print(f"Siham Ibu : {asalmasalah_ibu}")
                 print(f"Asal Masalah Awal : 6")
                 print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
                 print("=" * 20)
             else:
-                print(f"Asal Masalah Awal : {int(asalmasalah)}")
-                print(f"Asal Masalah Menjadi : {int(jumlahasalmasalah)}")
+                if(cucu_pr > 0 and ibu == "y"):
+                    asalmasalah_ubah = asalmasalah_ibu +  asalmasalah_cucupr
+                    print(f"Asal Masalah Sisa {sisa}")
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
+                    print(f"Siham Ibu : {asalmasalah_ibu}")
+                    print(f"Asal Masalah Awal : 6")
+                    print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
+                    print("=" * 20)
+                elif(cucu_pr > 0 and nenek > 0):
+                    asalmasalah_ubah = asalmasalah_nenek +  asalmasalah_cucupr
+                    print(f"Asal Masalah Sisa {sisa}")
+                    print(f"Siham Cucu Perempuan : {asalmasalah_cucupr}")
+                    print(f"Siham Nenek : {asalmasalah_nenek}")
+                    print(f"Asal Masalah Awal : 6")
+                    print(f"Asal Masalah Menjadi : {int(asalmasalah_ubah)}")
+                    print("=" * 20)
+                else:
+                    print(f"Asal Masalah Awal : {int(asalmasalah)}")
+                    print(f"Asal Masalah Menjadi : {int(jumlahasalmasalah)}")
         else:
             print(f"Asal Masalah Sisa : {int(sisa)}")
+    # bagian cucu laki dan cucu perempuan
+    finalbagiancucupr = 0
+    finalbagiancuculk = 0
+    sisa_cucu = 0
+    cucu = ""
+    if(cucu_pr > 0 and cucu_lk == 0):
+        cucu = "kondisi1"
+        finalbagiancuculk = 0  
+        if(bagiancucupr != "termahjub") :  
+            if (cucu_pr > 0 and anak_pr > 0):
+                if(ayah == "0" and kakek == "0"):
+                    if(ibu == "y"):
+                        asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_ibu
+                    else:
+                        if(nenek > 0):
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_nenek
+                        else:
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr
+                    sisa_harta_cucu_pr = harta - ambil_bagian_harta
+                    suku_bagian_cucu = sisa_harta_cucu_pr / asalmasalah_sisa
+                else:
+                    suku_bagian_cucu = harta / asalmasalah
+                finalbagiancucupr = asalmasalah_cucupr * suku_bagian_cucu
+                # sisa_harta_cucu_pr = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
+            elif (cucu_pr > 0 and anak_pr == 0):
+                if(ayah == "0" and kakek == "0"):
+                    if(ibu == "y"):
+                        asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_ibu
+                    else:
+                        if(nenek > 0):
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr + asalmasalah_nenek
+                        else:
+                            asalmasalah_sisa = asalmasalah_anakpr + asalmasalah_cucupr
+                    sisa_harta_cucu_pr = harta - ambil_bagian_harta
+                    suku_bagian_cucu = sisa_harta_cucu_pr / asalmasalah_sisa
+                else:
+                    suku_bagian_cucu = harta / asalmasalah
+                finalbagiancucupr = asalmasalah_cucupr * suku_bagian_cucu
+                # sisa_harta_cucu_pr = harta - ambil_bagian_harta - finalbagianayah - finalbagianibu - finalbagiannenek - finalbagiankakek
             
+            else:
+                finalbagiancucupr = asalmasalah_cucupr * suku_bagian
+        else:
+            finalbagiancucupr = 0
+    elif(cucu_pr == 0 and cucu_lk > 0):
+        if(bagiancuculk != "termahjub"):
+            cucu = "kondisi2"
+            sisa_harta_cucu = harta - ambil_bagian_harta - finalbagiananakpr - finalbagianayah - finalbagiankakek - finalbagianibu - finalbagiannenek
+            sisa_harta_cucu_lk = (1 * sisa_harta_cucu)
+            finalbagiancuculk = sisa_harta_cucu_lk * cucu_lk
+        else:
+            finalbagiancuculk = 0
+        sisa_cucu = finalbagiancuculk
+    
+    elif(cucu_pr > 0 and cucu_lk > 0):
+        cucu = "kondisi3"
+        asalmasalah_sisa_cucu = asalmasalah_cucupr + asalmasalah_cuculk
+        sisa_harta_cucu = harta - ambil_bagian_harta - finalbagiananakpr - finalbagianayah - finalbagiankakek - finalbagianibu - finalbagiannenek
+        suku_bagian_cucu = sisa_harta_cucu / asalmasalah_sisa_cucu
+        sisa_harta_cucu_pr = (1 * suku_bagian_cucu)
+        sisa_harta_cucu_lk = (2 * suku_bagian_cucu)
+        if(bagiancucupr != "termahjub"):
+            finalbagiancucupr = sisa_harta_cucu_pr * cucu_pr
+        else:
+            finalbagiancucupr = 0
+        if(bagiancuculk != "termahjub"):
+            finalbagiancuculk = sisa_harta_cucu_lk * cucu_lk
+        else:
+            finalbagiancuculk = 0
+        sisa_cucu = finalbagiancucupr + finalbagiancuculk 
     # tampil bagian suami
     if (suami == "y"):
-            print(f"Bagian Harta Suami : {int(finalbagiansuami)}")
+            print(f"Bagian Harta Suami : {round(finalbagiansuami, 2)}")
     else:
         # tampil bagian istri jika lebih 1 harta per istri
         if (istri > 1):
             bagi_harta_istri = finalbagianistri / istri
-            print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+            print(f"Bagian Harta Istri : {round(finalbagianistri, 2)}")
             j = 1
             while j <= istri:
                 print("Harta Untuk Istri Ke- ",
@@ -1728,138 +2562,243 @@ elif (jumlahasalmasalah < asalmasalah):
                 j += 1
         else:
             if (istri != 0):
-                print(f"Bagian Harta Istri : {int(finalbagianistri)}")
+                print(f"Bagian Harta Istri : {round(finalbagianistri, 2)}")
     if (bagianayah == 0.16 and bagiansisa == "+sisa"):
-        sisa_harta_ayah = harta - ambil_bagian_harta - finalbagianayah - finalbagiananakpr - finalbagianibu - finalbagiannenek
+        sisa_harta_ayah = harta - ambil_bagian_harta - finalbagianayah - finalbagiananakpr - finalbagianibu - finalbagiannenek - finalbagiancucupr
         print(
-            f"Bagian Harta Ayah 1/6 + sisa: {int(finalbagianayah)} + {int(sisa_harta_ayah)}")
-        print(f"Harta untuk ayah =  {int(finalbagianayah + sisa_harta_ayah)}")
+            f"Bagian Harta Ayah 1/6 + sisa: {round(finalbagianayah, 2)} + {round(sisa_harta_ayah, 2)}")
+        print(f"Harta untuk ayah =  {round(finalbagianayah + sisa_harta_ayah , 2)}")
     else:
+        sisa_harta_ayah = 0
         if(ayah == "y"):
-            print(f"Bagian Harta Ayah : {int(finalbagianayah)}")
+            print(f"Bagian Harta Ayah : {round(finalbagianayah)}")
     if(ibu == "y"):
-        print(f"Bagian Harta Ibu : {int(finalbagianibu)}")
+        print(f"Bagian Harta Ibu : {round(finalbagianibu, 2)}")
     if (nenek > 1):
             bagi_harta_nenek = finalbagiannenek / nenek
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
             j = 1
             while j <= nenek:
                 print("Harta Untuk Nenek Ke- ",
-                      j, " = ", bagi_harta_nenek)
+                      j, " = ", round(bagi_harta_nenek, 2))
                 j += 1
     else:
         if (nenek != 0):
-            print(f"Bagian Harta Nenek : {int(finalbagiannenek)}")
+            print(f"Bagian Harta Nenek : {round(finalbagiannenek, 2)}")
     if (bagiankakek == 0.16 and bagiansisakakek == "+sisa"):
-        sisa_harta_kakek = harta - ambil_bagian_harta - finalbagiankakek - finalbagiananakpr - finalbagianibu - finalbagiannenek
+        sisa_harta_kakek = harta - ambil_bagian_harta - finalbagiankakek - finalbagiananakpr - finalbagianibu - finalbagiannenek - finalbagiancucupr
         print(
-            f"Bagian Harta Kakek 1/6 + sisa: {int(finalbagiankakek)} + {int(sisa_harta_kakek)}")
-        print(f"Harta untuk kakek =  {int(finalbagiankakek + sisa_harta_kakek)}")
+            f"Bagian Harta Kakek 1/6 + sisa: {round(finalbagiankakek, 2)} + {round(sisa_harta_kakek, 2)}")
+        print(f"Harta untuk kakek =  {round(finalbagiankakek + sisa_harta_kakek, 2)}")
     else:
+        sisa_harta_kakek = 0
         if(kakek == "y"):
-            print(f"Bagian Harta Kakek : {int(finalbagiankakek)}")
+            print(f"Bagian Harta Kakek : {round(finalbagiankakek, 2)}")
     if (anak_pr > 1):
         sisa_harta = harta - ambil_bagian_harta
         if(ayah == "0" and ibu == "0"):
             if(kakek == "y" and nenek > 0):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek
-                suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
-                finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
+                # sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek
+                # if(cucu_lk > 0):
+                #     sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek - sisa_cucu
+                # else:
+                #     sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek - finalbagiancucupr
+                # suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
+                # finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
+                finalbagiananakpr = finalbagiananakpr
             elif(kakek == "0" and nenek > 0):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiannenek
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
             elif(kakek == "y" and nenek == 0):
                 if(bagiankakek == 0.16 and bagiansisakakek == "+sisa"):
-                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek - finalbagiancucupr 
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
                 else:
-                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
             else:
-                sisa_harta = harta - ambil_bagian_harta
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
                 # suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 # finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
         elif(ayah == "0" and ibu == "y"):
             if(kakek == "y"):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiankakek
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
-            else:    
-                sisa_harta = harta - ambil_bagian_harta - finalbagianibu
+            else:
+                if(cucu_lk > 0):    
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianibu - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianibu - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
         elif(ayah == "y" and ibu == "0"):
             if(nenek > 0):
                 # sisa_harta = harta - ambil_bagian_harta - finalbagiannenek
-                sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - sisa_harta_ayah - finalbagianayah
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - sisa_harta_ayah - finalbagianayah - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - sisa_harta_ayah - finalbagianayah - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
             else: 
                 if(bagianayah == 0.16 and bagiansisa == "+sisa"):
-                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_harta_ayah
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_harta_ayah - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
                 else:
-                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
-        print(f"Bagian Harta Anak Perempuan : {int(finalbagiananakpr)}")
+        print(f"Bagian Harta Anak Perempuan : {round(finalbagiananakpr, 2)}")
         sisa_harta_anak_pr = finalbagiananakpr / anak_pr
         # pembagian harta per anak perempuan
         i = 1
         while i <= anak_pr:
-            print("Harta Untuk Anak Perempuan ", i, " = ", sisa_harta_anak_pr)
+            print("Harta Untuk Anak Perempuan ", i, " = ", round(sisa_harta_anak_pr, 2))
             i += 1
     elif (anak_pr == 1):
         if(ayah == "0" and ibu == "0"):
             if(kakek == "y" and nenek > 0):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek
-                suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
-                finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
+                # if(cucu_lk > 0):
+                #     sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek - sisa_cucu
+                # else:
+                #     sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiannenek - sisa_harta_kakek - finalbagiancucupr
+                # suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
+                # finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
+                finalbagiananakpr = finalbagiananakpr
             elif(kakek == "0" and nenek > 0):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiannenek
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiannenek - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
             elif(kakek == "y" and nenek == 0):
                 if(bagiankakek == 0.16 and bagiansisakakek == "+sisa"):
-                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_harta_kakek - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
                 else:
-                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
             else:
-                sisa_harta = harta - ambil_bagian_harta
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
         elif(ayah == "0" and ibu == "y"):
             if(kakek == "y"):
-                sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagianibu - sisa_harta_kakek
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagianibu - sisa_harta_kakek - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagiankakek - finalbagianibu - sisa_harta_kakek - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
-            else:    
-                sisa_harta = harta - ambil_bagian_harta - finalbagianibu
+            else:
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianibu - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianibu - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
         elif(ayah == "y" and ibu == "0"):
             if(nenek > 0):
                 # sisa_harta = harta - ambil_bagian_harta - finalbagiannenek
-                sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagiannenek - sisa_harta_ayah
+                if(cucu_lk > 0):
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagiannenek - sisa_harta_ayah - sisa_cucu
+                else:
+                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagiannenek - sisa_harta_ayah - finalbagiancucupr
                 suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                 finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
             else: 
                 if(bagianayah == 0.16 and bagiansisa == "+sisa"):
-                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_harta_ayah
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_harta_ayah - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_harta_ayah - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr
                 else:
-                    sisa_harta = harta - ambil_bagian_harta - finalbagianayah
+                    if(cucu_lk > 0):
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - sisa_cucu
+                    else:
+                        sisa_harta = harta - ambil_bagian_harta - finalbagianayah - finalbagiancucupr
                     suku_bagian_sisa = sisa_harta / asalmasalah_anakpr
                     finalbagiananakpr = suku_bagian_sisa * asalmasalah_anakpr 
-        print(f"Bagian Harta Anak Perempuan : {int(finalbagiananakpr)}")
+        print(f"Bagian Harta Anak Perempuan : {round(finalbagiananakpr, 2)}")
+    # bagian harta cucu pr
+    if(cucu == "kondisi1"):
+        if(bagiancucupr != "termahjub"):
+            print(f"Bagian Harta Cucu Perempuan : {round(finalbagiancucupr, 2)}")
+            if(finalbagiancucupr == 0):
+                sisa_harta_cucu_pr = 0
+            else:    
+                sisa_harta_cucu_pr = finalbagiancucupr / cucu_pr
+            # pembagian harta per cucu perempuan
+            if(cucu_pr > 1):
+                i = 1
+                while i <= cucu_pr:
+                    print("Harta Untuk Cucu Perempuan ", i, " = ", round(sisa_harta_cucu_pr, 2))
+                    i += 1
+    elif(cucu == "kondisi2"):
+        # pembagian harta per cucu laki-laki
+        if(bagiancuculk != "termahjub"):
+            print(f"Harta Cucu Laki-Laki : {round(finalbagiancuculk, 2)}")
+            if(cucu_lk > 1):
+                j = 1
+                while j <= cucu_lk:
+                    print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                    j += 1
+    elif(cucu == "kondisi3"):
+        # pembagian harta per cucu perempuan
+        if(bagiancucupr != "termahjub"):
+            print(f"Harta Cucu Perempuan : {round(finalbagiancucupr, 2)}")
+            if(cucu_pr > 1):
+                i = 1
+                while i <= cucu_pr:
+                    print("Harta Untuk Cucu Perempuan ",
+                            i, " = ", round(sisa_harta_cucu_pr, 2))
+                    i += 1
+        # pembagian harta per cucu laki-laki
+        if(bagiancuculk != "termahjub"):
+            print(f"Harta Cucu Laki-Laki : {round(finalbagiancuculk, 2)}")
+            if(cucu_lk > 1):
+                j = 1
+                while j <= cucu_lk:
+                    print("Harta Untuk Cucu Laki - Laki ",
+                            j, " = ", round(sisa_harta_cucu_lk, 2))
+                    j += 1
